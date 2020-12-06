@@ -1,11 +1,11 @@
-package kr.makeajourney.sample
+package kr.makeajourney.chatting
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class SampleApplication
+class ChattingApplication
 
 fun main(args: Array<String>) {
-    runApplication<SampleApplication>(*args)
+    runApplication<ChattingApplication>(*args)
 }

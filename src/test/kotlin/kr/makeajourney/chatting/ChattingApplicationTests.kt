@@ -1,10 +1,10 @@
-package kr.makeajourney.sample
+package kr.makeajourney.chatting
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class SampleApplicationTests {
+class ChattingApplicationTests {
 
     @Test
     fun contextLoads() {
