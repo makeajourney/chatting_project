@@ -11,7 +11,7 @@ data class ChatRoom(
     private val sessions: MutableSet<WebSocketSession> = mutableSetOf()
 
     fun handleActions(session: WebSocketSession, chatMessage: ChatMessage, chatService: ChatService): Unit {
-        if (chatMessage.messageType == MessageType.ENTER) {
+        if (chatMessage.type == MessageType.ENTER) {
             sessions.add(session)
             chatMessage.message = chatMessage.sender + "님이 입장했습니다."
         }

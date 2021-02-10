@@ -20,7 +20,7 @@ class WebSocketHandler(
         val payload = message.payload
         logger.info("payload {}", payload)
         val chatMessage = objectMapper.readValue(payload, ChatMessage::class.java)
-        val room = chatService.findRoomById(chatMessage.chatRoomId)
+        val room = chatService.findRoomById(chatMessage.roomId)
         room?.handleActions(session, chatMessage, chatService)
     }
 }
